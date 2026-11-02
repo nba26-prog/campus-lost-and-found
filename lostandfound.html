@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Lost & Found</title>
+  </head>
+  <body>
+    <header>
+      <h1>Campus Lost & Found</h1>
+      <p>Helping students find what they have lost.</p>
+
+      <nav>
+        <ul>
+         <li><a href="#annonces">Annonces</a></li>
+         <li><a href="#signaler">Signaler un objet</a></li>
+         <li><a href="#recapitulatif">Récapitulatif</a></li>
+         <li><a href="#regles">Règles</a></li>
+         <li><a href="#faq">FAQ</a></li>
+         <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr/>
+
+    <main>
+      <section id="annonces">
+        <h2>Recently Reported Items</h2>
+
+        <article>
+          <h3>Clés de maison</h3>
+          <figure>
+            <img src="cles.jpg.jpg" alt="Trousseau de clés de maison" width="200"/>
+            <figcaption>Trousseau perdu, comportant 5 petites clés à tête ronde.</figcaption>
+          </figure>
+          <p><strong>Statut :</strong> Retrouvé</p>
+          <p><strong>Lieu :</strong> Bibliothèque</p>
+          <p><strong>Date :</strong> 28 octobre 2026</p>
+        </article>
+
+        <!-- Ajouter deux autres annonces -->
+        <article>
+          <h3>Pull rouge</h3>
+          <figure>
+            <img src="pullrouge.jpg" alt="Pull rouge" width="200"/>
+            <figcaption>Pull rouge en laine et à manches longues.</figcaption>
+          </figure>
+          <p><strong>Statut :</strong> Perdu</p>
+          <p><strong>Lieu :</strong> Amphi No. 5</p>
+          <p><strong>Date :</strong> 27 octobre 2026</p>
+        </article>
+
+        <article>
+          <h3>Parapluie bleu</h3>
+          <figure>
+            <img src="parapluiebleu.jpg" alt="Parapluie bleu" width="200"/>
+            <figcaption>Parapluie bleu avec une petite photo portrait sur une face.</figcaption>
+          </figure>
+          <p><strong>Statut :</strong> : Retrouvé</p>
+          <p><strong>Lieu :</strong> Sur le banc du jardin du Campus</p>
+          <p><strong>Date :</strong> 26 octobre 2026</p>
+        </article>
+      </section>
+
+      <hr />
+
+      <section id="signaler">
+        <h2>Signaler un objet</h2>
+
+        <form action="#" method="post">
+          <!-- Ajouter les champs du formulaire -->
+          
+          <fieldset>
+            <legend>Type de signalement</legend>
+            
+            <input type="radio" id="perdu" name="status" value="perdu" required />
+            <label for="perdu">Objet perdu </label>
+
+            <input type="radio" id="trouvé" name="status" value="trouvé">
+            <label for="trouvé">Objet trouvé</label>
+
+          </fieldset>
+          
+          <fieldset>
+            <legend>Informations sur le déclarant</legend>
+            
+            <label for="Nom">Nom :</label>
+            <input type="text" id="Nom" required/><br />
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required /><br />
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Informations sur l'objet</legend>
+            
+            <label for="nom-objet">Nom de l'objet :</label>
+            <input type="text" id="nom-objet" required /><br />
+          
+            <label for="catégorie">Catégorie :</label>
+            <select id="catégorie" name="catégorie">
+                <option value="vêtements">Vêtements</option>
+                <option value="clés">Clés</option>
+                <option value="livres">Livres</option>
+                <option value="documents">Documents</option>
+                <option value="Eléctronique">Eléctronique</option>
+                <option value="sacs">Sacs</option>
+                <option value="autres">Autres</option>
+            </select><br />
+           
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" rows="5"></textarea><br />
+          
+            <label for="lieu">Lieu :</label>
+            <input type="text" id="lieu" /><br />
+          
+            <label for="date">Date :</label>
+            <input type="text" id="date" required /><br />
+          
+
+           
+            <label for="photo">Photo :</label>
+            <input type="file" id="photo" name="photo" accept="image/*" /><br />
+           </fieldset>
+
+           <p><button type="submit">Envoyer</button></p>
+
+
+        </form>
+      </section>
+
+      <hr/>
+
+      <section id="recapitulatif">
+        <h2>Résumé des objets</h2>
+
+        <table border="1">
+          <caption>Liste des objets signalés</caption>
+          <thead>
+            <tr>
+              <th>Objet</th>
+              <th>Statut</th>
+              <th>Lieu</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Clés de maison</td>
+                <td>Retrouvé</td>
+                <td>Bibliothèque</td>
+                <td>28-10-2026</td>
+            </tr>
+            <tr>
+                <td>Pull rouge</td>
+                <td>Perdu</td>
+                <td>Amphi No. 5</td>
+                <td>27-10-2026</td>
+            </tr>
+            <tr>
+                <td>Parapluie bleu</td>
+                <td>Retrouvé</td>
+                <td>Sur le banc du jardin du Campus</td>
+                <td>26-10-2026</td>
+            </tr>
+            <!-- Ajouter au moins trois lignes -->
+          </tbody>
+        </table>
+      </section>
+
+      <hr/>
+
+      <section id="regles">
+        <h2>Règles de la plateforme</h2>
+        <!-- Ajouter une liste de règles -->
+         <ul>
+            <li>Tout signalement doit reposer sur des informations exactes et être fait de bonne foi.</li>
+            <li>Il est nécessaire d'apporter une description claire des objets signalés, tout en veillant à ne révéler aucune information personnelle ou confidentielle. </li>
+            <li>Prière d'indiquer les lieux et dates exacts de perte des objets afin de faciliter leur recherche.</li>
+            <li>Il est indispensable de fournir une adresse mail valide afin de pouvoir vous contacter. </li>
+         </ul>
+      </section>
+
+      <hr/>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        
+        <h3>Qui sont les membres de l'équipe Campus Lost & Found ?</h3>
+        <p>Nos membres actuels sont :
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Fonction</th>
+                <th scope="col">Nom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Président</th>
+                <td>Selma</td>
+              </tr>
+              <tr>
+                <th scope="row">Secrétaire</th>
+                <td>Hedi</td>
+              </tr>
+              <tr>
+                <th scope="row">Trésorier</th>
+                <td>Cyrine</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+
+        <h3>Combien de temps les objets retrouvés sont-ils conservés ?</h3>
+        <p>Les objets retrouvés sont conservés 30 jours. Après cette durée, il seront donnés à des associations.<br/>
+          <em>Nous vous informons que nous organisons une collecte géante de vêtements et autres objets utiles le <time datetime="2026-11-28"><strong>28 novembre 2026</strong></time> dont nous ferons également don à des associations.</em>
+        </p>
+        <details>
+          <summary>Nos associations partenaires</summary>
+          Nous coopérons avec plusieurs associations : Association A, Association B et Association C.
+        </details>
+
+        <h3>Puis-je charger une personne tierce de récupérer un objet pour mon compte ?</h3>
+        <p>Il est possible de charger une personne tierce à condition qu'elle présente au moment de la restitution une autorisation écrite de votre part ainsi qu'une copie de votre pièce d'identité.</p>
+      
+        <h3>Que faire si l'objet que je veux signaler n'est pas listé ?</h3>
+        <p>Vous pouvez alors signaler cet objet en utilisant notre <a href="#signaler">formulaire</a> et nous vous contacterons.<br/>
+        Suivez la démo ci-dessous afin de mieux comprendre les étapes de signalement.
+        </p>
+        <p><video width="320" height="240" autoplay>
+	      <source src="videotest.mp4" type="video/mp4"/>
+        </video>
+        </p>
+    
+    
+    </section>
+
+    </main>
+
+    <hr />
+
+    <footer id="contact">
+      <p>Campus Lost & Found</p>
+      <a href="mailto:lostfound@example.com">Contacter l'équipe</a>
+      <p>
+        Campus Lost &amp; Found est une plateforme étudiante d'entraide visant à aider à restituer chaque objet perdu à son propriétaire.
+      </p>
+      <p><a href="#top">Revenir au haut de la page</a></p>
+    </footer>
+  </body>
+</html>
