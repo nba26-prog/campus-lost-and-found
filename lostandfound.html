@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Lost & Found</title>
+    <link rel="stylesheet" href="lostandfoundstyle.css" />
   </head>
   <body>
-    <header>
+    <header id="top">
       <h1>Campus Lost & Found</h1>
-      <p>Helping students find what they have lost.</p>
+      <p id="sitepurpose">Helping students find what they have lost.</p>
 
       <nav>
         <ul>
@@ -28,7 +29,7 @@
       <section id="annonces">
         <h2>Recently Reported Items</h2>
 
-        <article>
+        <article class="item-card">
           <h3>Clés de maison</h3>
           <figure>
             <img src="cles.jpg.jpg" alt="Trousseau de clés de maison" width="200"/>
@@ -40,7 +41,7 @@
         </article>
 
         <!-- Ajouter deux autres annonces -->
-        <article>
+        <article class="item-card">
           <h3>Pull rouge</h3>
           <figure>
             <img src="pullrouge.jpg" alt="Pull rouge" width="200"/>
@@ -51,13 +52,13 @@
           <p><strong>Date :</strong> 27 octobre 2026</p>
         </article>
 
-        <article>
+        <article class="item-card">
           <h3>Parapluie bleu</h3>
           <figure>
             <img src="parapluiebleu.jpg" alt="Parapluie bleu" width="200"/>
             <figcaption>Parapluie bleu avec une petite photo portrait sur une face.</figcaption>
           </figure>
-          <p><strong>Statut :</strong> : Retrouvé</p>
+          <p><strong>Statut :</strong>Retrouvé</p>
           <p><strong>Lieu :</strong> Sur le banc du jardin du Campus</p>
           <p><strong>Date :</strong> 26 octobre 2026</p>
         </article>
@@ -86,7 +87,7 @@
             <legend>Informations sur le déclarant</legend>
             
             <label for="Nom">Nom :</label>
-            <input type="text" id="Nom" required/><br />
+            <input type="text" id="Nom" name="nom" required /><br />
 
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required /><br />
